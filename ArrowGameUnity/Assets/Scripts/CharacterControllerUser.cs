@@ -55,7 +55,7 @@ public class CharacterControllerUser : MonoBehaviour
                 mouseSideButton = !mouseSideButton;
             }
 
-            if (mouseSideButton && ((Input.GetAxis("Vertical") != 0) || Input.GetButton("Jump")) || (Input.GetMouseButton(0) && Input.GetMouseButton(1)))
+            if (mouseSideButton && ((Input.GetAxis("Vertical") != 0)) || (Input.GetMouseButton(0) && Input.GetMouseButton(1)))
                 mouseSideButton = false;
 
             // L+R MouseButton Movement
