@@ -70,11 +70,11 @@ public class CameraController : MonoBehaviour
         if (pbuffer < 0) pbuffer = 0;
 
         //Sidebuttonmovement
-        //if ((Input.GetAxis("Toggle Move") != 0) && (pbuffer == 0))
-        //{
-        //    pbuffer = coolDown;
-        //    mouseSideButton = !mouseSideButton;
-        //}
+        if ((Input.GetAxis("Toggle Move") != 0) && (pbuffer == 0))
+        {
+            pbuffer = coolDown;
+            mouseSideButton = !mouseSideButton;
+        }
         if (mouseSideButton && Input.GetAxis("Vertical") != 0)
             mouseSideButton = false;
 
